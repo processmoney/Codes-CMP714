@@ -1,0 +1,21 @@
+public class ArraySum {
+    public static void main(String[] args) {
+        // Sample array
+        int[] numbers = {1, 2, 3, 4, 5};
+
+        // Add the sum of the Array
+        int sum = calculateSum(numbers);
+
+        // Show Result
+        System.out.println("Sum of the array elements: " + sum);
+    }
+
+    // Function to calculate the sum of an array
+    public static int calculateSum(int[] array) {
+        int sum = 0;
+        for (int num : array) {
+            sum += num;
+        }
+        return sum;
+    }
+}
